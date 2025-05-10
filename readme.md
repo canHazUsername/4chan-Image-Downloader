@@ -6,9 +6,9 @@ This script automates the download of images from 4chan threads using Python (wi
 - You must manually solve CAPTCHA in Chromium (if needed) before images can load.
 
 ### Requirements
-- Ubuntu/Debian-based system
-- Python 3.7+
-- Chromium installed and launched with remote debugging
+- Ubuntu/Debian-based OS
+- Python 3.13
+- `chromium` Browser to load pages
 - `playwright` Python package with Chromium support
 
 ### Setup Instructions
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### How to Use
 
 1. Prepare `urls.txt`
-Create a `urls.txt` file in the script directory. Each line should contain **one 4chan thread URL**, like this:
+Create/Edit `urls.txt` file in the script directory. Each line should contain **one 4chan thread URL**, like this:
 
 ```
 https://boards.4chan.org/hr/thread/1234
@@ -48,7 +48,7 @@ https://boards.4chan.org/hr/thread/5678
 sh launch_chromium.sh
 ```
 
-You must leave this browser window open. Manually solve any CAPTCHA when prompted.
+You must leave this browser window open. Manually solve any CAPTCHA if/when prompted.
 
 3. Run the Script
 ```bash
@@ -58,6 +58,7 @@ python main.py
 The script will:
 - Connect to the open Chromium tab
 - Navigate to the first URL
+- Extract the name of the thread (truncated to 32 chars and sanitized to a friendly directory name format)
 - Download all thread images
 - Repeat for each thread in `urls.txt`
 
