@@ -13,13 +13,19 @@ This script automates the download of images from 4chan threads using Python (wi
 
 ### Setup Instructions
 
-1. Install Chromium
+1. Clone This Repo
+```bash
+https://github.com/canHazUsername/4chan-Image-Downloader.git
+cd 4chan-Image-Downloader
+```
+
+2. Install Chromium
 ```bash
 sudo apt update
 sudo apt install chromium-browser
 ```
 
-2. Install Python Virtual Environment and Dependencies
+3. Install Python Virtual Environment and Dependencies
 ```bash
 python3 -m venv venv
 source venv/bin/activate
