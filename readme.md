@@ -45,7 +45,8 @@ https://boards.4chan.org/hr/thread/5678
 
 2. Launch Chromium with Remote Debugging
 ```bash
-sh launch_chromium.sh``
+sh launch_chromium.sh
+```
 
 You must leave this browser window open. Manually solve any CAPTCHA when prompted.
 
@@ -62,9 +63,6 @@ The script will:
 
 ### Output
 
-Images will be saved under:
-```
-downloaded_images/<sanitized-thread-title>/
-```
+Images will be saved under `downloaded_images/<sanitized-thread-title>/`
 
 Each thread gets its own folder.
