@@ -4,6 +4,7 @@ This script automates the download of images from 4chan threads using Python (wi
 
 ### Note
 - You must manually solve CAPTCHA in Chromium (if needed) before images can load.
+- No UI at the moment, just a script to run.
 
 ### Requirements
 - Ubuntu/Debian-based OS
